@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class Boot
 {
-  private readonly bool _isInitialized = false;
+  private readonly bool _IsInitialized = false;
   
   public Boot()
   {
-    if (_isInitialized)
+    if (_IsInitialized)
     {
       return;
     }
     
-    _isInitialized = true;
+    _IsInitialized = true;
     Debug.Log("Boot constructor");
   }
 }
