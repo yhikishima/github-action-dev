@@ -14,9 +14,15 @@ name: Lint Code Base
 # Start the job on all push #
 #############################
 on:
-  push:
-    branches-ignore:
-      - 'master'
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+    paths:
+      - "**.cs"
+      - "**.cpp"
 
 ###############
 # Set the Job #
